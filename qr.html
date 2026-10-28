@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Семинар QR-коды</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=PT+Sans:wght@400;700&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>
+  body { margin: 0; background: #fff; color: #142039; font-family: "PT Sans", Arial, sans-serif; display: grid; place-items: center; min-height: 100vh; text-align: center; padding: 24px; box-sizing: border-box }
+  h1 { font-family: "PT Serif", Georgia, serif; font-size: clamp(26px, 5vw, 44px); margin: 0 0 8px }
+  p { margin: 4px 0; font-size: 20px; color: #5c6577 }
+  #qr { margin: 28px auto; width: fit-content; line-height: 0 }
+  #qr img, #qr canvas { max-width: 80vw; height: auto }
+  .when { font-weight: 700; color: #b5653a; font-size: 22px }
+  @media print { p.tip { display: none } }
+</style>
+</head>
+<body>
+<main>
+  <p>Ұлытау облысы · Жезқазған қаласы</p>
+  <h1>Семинарға қош келдіңіз!</h1>
+  <p class="when">29 қазан 2026 · 10:00 · №8 гимназия, акт залы</p>
+  <div id="qr"></div>
+  <p><b>Телефон камерасымен сканерлеп, «Келдім» деп белгілеңіз</b></p>
+  <p class="tip">Басып шығару: Ctrl + P</p>
+</main>
+<script src="config.js"></script>
+<script>
+  const cfg = window.SEMINAR_CONFIG || {};
+  const url = cfg.pageUrl || new URL("./", location.href).href;
+  new QRCode(document.getElementById("qr"), { text: url, width: 420, height: 420, colorDark: "#142039", colorLight: "#ffffff", correctLevel: QRCode.CorrectLevel.M });
+</script>
+</body>
+</html>
