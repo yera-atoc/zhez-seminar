@@ -9,7 +9,7 @@ window.SEMINAR_CONFIG = {
   sheetUrl: "",
 
   // QR-код осы сілтемеге апарады. Бос қалса, беттің өз мекенжайы алынады.
-  pageUrl: "https://yera-atoc.github.io/zhez-seminar/",
+  pageUrl: "https://zhez-seminar.vercel.app/",
 
   title: "«Білім сапасын арттыру» семинары, 29.10.2026"
 };

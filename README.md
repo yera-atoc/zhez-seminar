@@ -26,8 +26,8 @@
 1. Репозиторийде **Settings → Pages**.
 2. **Source: Deploy from a branch**, **Branch: `main`**, бума **`/ (root)`** → **Save**.
 3. 1–2 минуттан кейін бет мына мекенжайда ашылады:
-   https://yera-atoc.github.io/zhez-seminar/
-4. QR-код: https://yera-atoc.github.io/zhez-seminar/qr.html — басып шығарыңыз немесе экранға шығарыңыз.
+   https://zhez-seminar.vercel.app/
+4. QR-код: https://zhez-seminar.vercel.app/qr.html — басып шығарыңыз немесе экранға шығарыңыз.
 
 ## 3-қадам. «Келдім» белгілерін Google кестеге жинау (ұсынылады)
 
